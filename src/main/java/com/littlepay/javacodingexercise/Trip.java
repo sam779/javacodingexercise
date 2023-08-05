@@ -3,16 +3,16 @@ package com.littlepay.javacodingexercise;
 import java.time.LocalDateTime;
 
 public class Trip {
-    private LocalDateTime started;
-    private LocalDateTime finished;
-    private long durationSecs;
-    private String fromStopId;
-    private String toStopId;
-    private double chargeAmount;
-    private String companyId;
-    private String busId;
-    private String pan;
-    private TripStatus status;
+    private final LocalDateTime started;
+    private final LocalDateTime finished;
+    private final long durationSecs;
+    private final String fromStopId;
+    private final String toStopId;
+    private final double chargeAmount;
+    private final String companyId;
+    private final String busId;
+    private final String pan;
+    private final TripStatus status;
 
     public Trip(LocalDateTime started, LocalDateTime finished, long durationSecs, String fromStopId, String toStopId, double chargeAmount, String companyId, String busId, String pan, TripStatus status) {
         this.started = started;

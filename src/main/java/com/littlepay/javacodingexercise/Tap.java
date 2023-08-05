@@ -3,13 +3,13 @@ package com.littlepay.javacodingexercise;
 import java.time.LocalDateTime;
 
 public class Tap {
-    private int id;
-    private LocalDateTime dateTime;
-    private TapType tapType;
-    private String stopId;
-    private String companyId;
-    private String busId;
-    private String pan;
+    private final int id;
+    private final LocalDateTime dateTime;
+    private final TapType tapType;
+    private final String stopId;
+    private final String companyId;
+    private final String busId;
+    private final String pan;
 
     public Tap(int id, LocalDateTime dateTime, TapType tapType, String stopId, String companyId, String busId, String pan) {
         this.id = id;
