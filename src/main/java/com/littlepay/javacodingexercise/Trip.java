@@ -33,80 +33,40 @@ public class Trip {
         return this.started;
     }
 
-    public void setStarted(LocalDateTime started) {
-        this.started = started;
-    }
-
     public LocalDateTime getFinished() {
         return this.finished;
-    }
-
-    public void setFinished(LocalDateTime finished) {
-        this.finished = finished;
     }
 
     public long getDurationSecs() {
         return this.durationSecs;
     }
 
-    public void setDurationSecs(long durationSecs) {
-        this.durationSecs = durationSecs;
-    }
-
     public String getFromStopId() {
         return this.fromStopId;
-    }
-
-    public void setFromStopId(String fromStopId) {
-        this.fromStopId = fromStopId;
     }
 
     public String getToStopId() {
         return this.toStopId;
     }
 
-    public void setToStopId(String toStopId) {
-        this.toStopId = toStopId;
-    }
-
     public double getChargeAmount() {
         return this.chargeAmount;
-    }
-
-    public void setChargeAmount(double chargeAmount) {
-        this.chargeAmount = chargeAmount;
     }
 
     public String getCompanyId() {
         return this.companyId;
     }
 
-    public void setCompanyId(String companyId) {
-        this.companyId = companyId;
-    }
-
     public String getBusId() {
         return this.busId;
-    }
-
-    public void setBusId(String busId) {
-        this.busId = busId;
     }
 
     public String getPan() {
         return this.pan;
     }
 
-    public void setPan(String pan) {
-        this.pan = pan;
-    }
-
     public TripStatus getStatus() {
         return this.status;
-    }
-
-    public void setStatus(TripStatus status) {
-        this.status = status;
     }
 
     @Override

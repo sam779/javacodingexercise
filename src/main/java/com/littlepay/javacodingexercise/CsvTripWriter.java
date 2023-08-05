@@ -13,7 +13,7 @@ public class CsvTripWriter implements TripWriter {
     }
 
     @Override
-    public void writeTrips(List<Trip> trips) throws IOException {
+    public void writeTrips(List<Trip> trips) {
         try (PrintWriter writer = new PrintWriter(new FileWriter(filename))) {
             // Write CSV header
             writer.println("Started, Finished, DurationSecs, FromStopId, ToStopId, ChargeAmount, CompanyId, BusID, PAN, Status");
