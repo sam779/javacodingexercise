@@ -23,6 +23,8 @@ public class CsvTapReader implements TapReader {
 
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
             String line;
+            String header = br.readLine();
+            System.out.println(header);
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");
                 int id = Integer.parseInt(values[0].trim());
